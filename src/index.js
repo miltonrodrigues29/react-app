@@ -9,27 +9,29 @@ import "./index.css";
 //className instead of class
 //close every element
 //formatting
+//setup vars
+const author = "James Clear";
+const title = "Atomic Habits";
+const img =
+  "https://images-eu.ssl-images-amazon.com/images/I/51-nXsSRfZL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg";
 
 function Booklist() {
   return (
     <section className="booklist">
-      <Book />
+      <Book job="developer" sal={"55k"} />
     </section>
   );
 }
 
-const author = "James Clear";
-const Book = () => {
-  const title = "Atomic Habits";
+const Book = (props) => {
+  console.log(props);
   return (
     <article className="book">
-      <img
-        src="https://images-eu.ssl-images-amazon.com/images/I/51-nXsSRfZL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
-        alt=""
-      ></img>
+      <img src={img} alt=""></img>
       <h1>{title}</h1>
       <h4>{author}</h4>
       <p>{6 + 6}</p>
+      <p>{props.job}</p>
     </article>
   );
 };
