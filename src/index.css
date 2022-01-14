@@ -20,17 +20,18 @@ h1 {
   max-width: 1170px;
   margin: 5rem auto;
   display: grid;
-  gap: 2 rem;
+  gap: 2rem;
 }
 
 @media screen and (min-width: 768px) {
   .booklist {
     grid-template-columns: repeat(3, 1fr);
+    align-items: start;
   }
 }
 
 .book {
-  background: #fff;
+  background: rgb(241, 234, 234);
   border-radius: 1rem;
   padding: 1rem 2rem;
 }
@@ -41,6 +42,10 @@ h1 {
 
 .book h4 {
   color: #617d98;
-  font-size: 0.75 rem;
+  font-size: 0.75rem;
   margin-top: 0.25rem;
+}
+
+.book {
+  margin-top: 0.5rem;
 }
