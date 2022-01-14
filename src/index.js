@@ -60,6 +60,7 @@ const Book = (props) => {
       <h1>{id}</h1> <img src={img} alt=""></img>
       <h1>{title}</h1>
       <h4>{author}</h4>
+      <button type="button" onClick={console.log(button clicked!)}>Reference example</button>
     </article>
   );
 };
